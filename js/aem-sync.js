@@ -62,7 +62,7 @@ let init = () => {
 
   browserSync.create({
       name: 'aem-sync',
-      proxy: targets
+      proxy: targets.split(',')[0]
   });
 
   // Overview ANSI color codes: http://www.lihaoyi.com/post/BuildyourownCommandLinewithANSIescapecodes.html
